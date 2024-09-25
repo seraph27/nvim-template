@@ -62,17 +62,18 @@ return {
             },
         },
         popup_ui = {
-            total_width = 0.8,
-            total_height = 0.8,
+            total_width = 0.9,
+            total_height = 0.9,
             layout = {
-                { 2, {
-                    { 1, {
-                         { 1, "so" },
-                         { 1, "eo" },
+                { 1, {
+                    { 1, { 
+                         { 2, "so" },
+                         { 2, "eo" },
+                         { 3, "si" },
+                         { 3, "tc" },
                        } },
                     { 1, "se" },
-                  } },
-                { 1, { { 1, "tc" }, { 1, "si" } } },
+                  } }
             },
         },
         split_ui = {
@@ -105,8 +106,9 @@ return {
                     "-o", "a",  -- Output binary name
                     "-static-libstdc++", 
                     "-std=c++20", 
-                    "-DMISAKA", 
+                    "-DMISAKA",
                     "./$(FNAME)"  -- Source file
+
                 }
             },
         },

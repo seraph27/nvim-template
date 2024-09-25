@@ -27,7 +27,7 @@ return {
             key = 'c',
             },
         },
-        footer = {'fucking retards'}, -- footer
+        footer = {'grind'}, -- footer
         },
       }
     end,
